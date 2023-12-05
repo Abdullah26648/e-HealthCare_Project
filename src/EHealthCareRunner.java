@@ -4,9 +4,8 @@ public class EHealthCareRunner {
     public static void main(String[] args) {
         EHealthCareSystem eHealthCareSystem = new EHealthCareSystem();
         Scanner scanner = new Scanner(System.in);
-        boolean exıt = true;
 
-        while (exıt) {
+        while (true) {
             System.out.println("\nE-Health Care System Menu:");
             System.out.println("1. Add Patient");
             System.out.println("2. View Patients");
@@ -28,7 +27,7 @@ public class EHealthCareRunner {
                     break;
                 case 4:
                     System.out.println("Exiting program. Goodbye!");
-                    exıt = false;
+                    System.exit(0);
                 default:
                     System.out.println("Invalid choice. Please try again.");
             }
